@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva com pagamento</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Cadastro e Reserva</h1>
+    <form id="reservationForm">
+        <label for="name">Nome e Sobrenome:</label>
+        <input type="text" id="name" required><br><br>
+
+        <br id="reservationForm">
+            <label for="email">Email:</label>
+            <input type="text" id="email" required><br><br>
+
+            <label for="paymentMethod">Metodo de pagamento</label>
+            <select id="paymentMethod" required>
+                <option value="pix">PIX</option>
+                <option value="qrcode">QR Code</option>
+                </select><br></br>
+
+             <button tapy="submit">Fazer Reserva e Pagar</button>
+             </form>
+
+             <div id="paymentQRcode" style="display: none;">
+                <img src="" alt="QR code de pagamento">
+                <p>Escanei o QRcode para realizar o pagamento</p>
+             </div>
+             <script src="script.js"></script>
+    
+</body>
+</html>
